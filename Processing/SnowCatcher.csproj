@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NetProcessing">
+      <HintPath>..\lib\NetProcessing.dll</HintPath>
+    </Reference>
     <Reference Include="ProcessingSketch">
       <HintPath>..\..\lib\ProcessingSketch.dll</HintPath>
     </Reference>
