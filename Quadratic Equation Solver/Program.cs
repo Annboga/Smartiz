@@ -30,25 +30,27 @@ namespace Quadratic_Equation_Solver //Identifier: {_|a..z|A..Z}{_|a..z|A..Z|0..9
         {
             if (r.Length == 0)
             {
-                Console.WriteLine("Nincs megoldas");
+                Console.WriteLine("Nincs megoldás");
             }
 
             else if (r.Length == 1)
             {
-                Console.WriteLine("A megoldas: " + r[0]);
+                Console.WriteLine("A megoldás: " + r[0]);
             }
             else
             {
-                Console.WriteLine("A megoldasok: " + r[0] + ", " + r[1]);
+                Console.WriteLine("A megoldások: " + r[0] + ", " + r[1]);
             }
         }
 
         private static QuadtraticEquation ReadEquation()
         {
             QuadtraticEquation e = new QuadtraticEquation();
-
+            Console.WriteLine("Add meg az első együtthatót!");
             e.A = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Add meg a második együtthatót!");
             e.B = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Add meg a harmadik együtthatót!");
             e.C = Convert.ToDouble(Console.ReadLine());
             return e;
         }
